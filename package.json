@@ -1,0 +1,34 @@
+{
+  "name": "react-transformicons",
+  "version": "0.0.1",
+  "description": "Transformicons for React",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merodriguezblanco/react-transformicons.git"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "mkdir dist && mkdir dist/js && mkdir dist/css && babel ./src/ --out-file ./dist/js/react-transformicons.js && cp ./vendor/transformicons.css dist/css/"
+  },
+  "keywords": [
+    "react",
+    "transformicons",
+    "icons",
+    "svg",
+    "css"
+  ],
+  "author": "Martin Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/merodriguezblanco/react-transformicons/issues"
+  },
+  "homepage": "https://github.com/merodriguezblanco/react-transformicons#readme",
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-cli": "^6.20.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.20.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
