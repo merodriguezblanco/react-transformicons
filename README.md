@@ -17,6 +17,7 @@ Transformicons for React.
 - [`t-grid`](#grid)
 
 ### Menu
+
 Provides with Menu icons.
 
 Parameters:
@@ -27,6 +28,18 @@ Parameters:
 
 #### Usage
 
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { MenuIcon } from 'react-transformicons';
+
+ReactDOM.render(
+  <MenuIcon />,
+  document.getElementById('root')
+);
+```
+
+#### More examples
 ```handlebars
 <MenuIcon />
 <MenuIcon animation="butterly" />
@@ -46,16 +59,28 @@ Parameters:
 - `animation` - string, optional - Sets the menu animation type. In case this parameter is
   not provided, a default one will be provided.
 - `isActive` - boolean, optional - Sets initial state for the button. Defaults to
-  false.
+  `false`.
 
 Optional parameters:
 - `animation` - string - Sets the menu animation type. In case this parameter is
   not provided, it will default to `rearrange`.
 - `isActive` - boolean - Sets initial state for the button. Defaults to
-  false.
+  `false`.
 
 #### Usage
 
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { GridIcon } from 'react-transformicons';
+
+ReactDOM.render(
+  <GridIcon />,
+  document.getElementById('root')
+);
+```
+
+#### More examples
 ```handlebars
 <GridIcon />
 <GridIcon animation="rearrange" />
