@@ -14,34 +14,38 @@ class MenuIcon extends React.Component {
   constructor(props) {
     super(props);
 
-    let isActive = props.isActive ? props.isActive : false;
+    const isActive = props.isActive ? props.isActive : false;
     this.handleClick = this.handleClick.bind(this);
 
     this.state = {
       isActive: isActive
-    }
-  }
+    };
+  };
 
   handleClick(event) {
     this.setState((prevState) => ({
       isActive: !prevState.isActive
     }));
-  }
+  };
 
   render() {
     const animation = menuAnimations[this.props.animation ? this.props.animation : defaultAnimation];
     const transform = this.state.isActive ? 'tcon-transform' : '';
 
     return (
-      <button className={`tcon ${animation} ${transform}`}
-              aria-label="toggle menu"
-              onClick={this.handleClick}>
-        <span className="tcon-menu__lines"
-              aria-hidden="true"></span>
+      <button
+        aria-label="toggle menu"
+        className={`tcon ${animation} ${transform}`}
+        onClick={this.handleClick}
+      >
+        <span
+          aria-hidden="true"
+          className="tcon-menu__lines"
+        />
         <span className="tcon-visuallyhidden">toggle menu</span>
       </button>
     );
-  }
-}
+  };
+};
 
 export default MenuIcon;
