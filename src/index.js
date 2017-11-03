@@ -1,5 +1,5 @@
-import GridIcon from './icons/t-grid';
-import MenuIcon from './icons/t-menu';
+import GridIcon from './icons/grid';
+import MenuIcon from './icons/menu';
 
 module.exports = {
   GridIcon,

@@ -1,9 +1,10 @@
-import React from 'react';
+import React  from 'react';
+import styles from '../../vendor/transformicons.css';
 
 const defaultAnimation = 'rearrange';
 const gridAnimations = {
-  'rearrange': 'tcon-grid tcon-grid--rearrange',
-  'collapse':  'tcon-grid tcon-grid--collapse'
+  'rearrange': ['tcon-grid', 'tcon-grid--rearrange'],
+  'collapse':  ['tcon-grid', 'tcon-grid--collapse']
 };
 
 class GridIcon extends React.Component {
@@ -27,18 +28,20 @@ class GridIcon extends React.Component {
   render() {
     const animation = gridAnimations[this.props.animation ? this.props.animation : defaultAnimation];
     const transform = this.state.isActive ? 'tcon-transform' : '';
+    const animationClass = animation.map(s => styles[`${s}`]).join(' ');
+    const buttonClass = [styles.tcon, animationClass, styles[`${transform}`]].join(' ');
 
     return (
       <button
         aria-label="toggle grid"
-        className={`tcon ${animation} ${transform}`}
+        className={buttonClass}
         onClick={this.handleClick}
       >
         <span
           aria-hidden="true"
-          className="tcon-grid__item"
+          className={styles['tcon-grid__item']}
         />
-        <span className="tcon-visuallyhidden">toggle grid</span>
+        <span className={styles['tcon-visuallyhidden']}>toggle grid</span>
       </button>
     );
   };

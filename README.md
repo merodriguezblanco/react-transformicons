@@ -13,8 +13,8 @@ Transformicons for React.
 
 ## Transformicon Components
 
-- [`t-menu`](#menu)
-- [`t-grid`](#grid)
+- [Menu Icons](#menu)
+- [Grid Icons](#grid)
 
 ### Menu
 
