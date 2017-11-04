@@ -40,6 +40,7 @@ class GridIcon extends React.Component {
         <span
           aria-hidden="true"
           className={styles['tcon-grid__item']}
+          {...this.props}
         />
         <span className={styles['tcon-visuallyhidden']}>toggle grid</span>
       </button>

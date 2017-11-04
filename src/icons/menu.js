@@ -40,6 +40,7 @@ class MenuIcon extends React.Component {
         aria-label="toggle menu"
         className={buttonClass}
         onClick={this.handleClick}
+        {...this.props}
       >
         <span
           aria-hidden="true"
