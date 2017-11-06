@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RemoveIcon when animation="check" renders a check remove 1`] = `
+<button
+  animation="check"
+  aria-label="remove item"
+  className="tcon tcon-remove tcon-remove--check "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    remove item
+  </span>
+</button>
+`;
+
+exports[`RemoveIcon when animation="chevron-down" renders a chevron-down remove 1`] = `
+<button
+  animation="chevron-down"
+  aria-label="remove item"
+  className="tcon tcon-remove tcon-remove--chevron-down "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    remove item
+  </span>
+</button>
+`;
+
+exports[`RemoveIcon when animation="chevron-left" renders a chevron-left remove 1`] = `
+<button
+  animation="chevron-left"
+  aria-label="remove item"
+  className="tcon tcon-remove tcon-remove--chevron-left "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    remove item
+  </span>
+</button>
+`;
+
+exports[`RemoveIcon when animation="chevron-right" renders a chevron-right remove 1`] = `
+<button
+  animation="chevron-right"
+  aria-label="remove item"
+  className="tcon tcon-remove tcon-remove--chevron-right "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    remove item
+  </span>
+</button>
+`;
+
+exports[`RemoveIcon when animation="chevron-up" renders a chevron-up remove 1`] = `
+<button
+  animation="chevron-up"
+  aria-label="remove item"
+  className="tcon tcon-remove tcon-remove--chevron-up "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    remove item
+  </span>
+</button>
+`;
+
+exports[`RemoveIcon when no animation renders a check remove 1`] = `
+<button
+  aria-label="remove item"
+  className="tcon tcon-remove tcon-remove--check "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    remove item
+  </span>
+</button>
+`;

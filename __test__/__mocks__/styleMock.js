@@ -19,5 +19,11 @@ module.exports = {
   'tcon-transform': 'tcon-transform',
   'tcon-plus': 'tcon-plus',
   'tcon-plus--minus': 'tcon-plus--minus',
-  'tcon-plus--check': 'tcon-plus--check'
+  'tcon-plus--check': 'tcon-plus--check',
+  'tcon-remove': 'tcon-remove',
+  'tcon-remove--check': 'tcon-remove--check',
+  'tcon-remove--chevron-left': 'tcon-remove--chevron-left',
+  'tcon-remove--chevron-right': 'tcon-remove--chevron-right',
+  'tcon-remove--chevron-down': 'tcon-remove--chevron-down',
+  'tcon-remove--chevron-up': 'tcon-remove--chevron-up'
 };
