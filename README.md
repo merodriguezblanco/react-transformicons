@@ -11,7 +11,7 @@ Transformicons for React.
 
 ## Installation
 
-`npm install react-transformicons`
+    npm install react-transformicons
 
 ## Usage
 
