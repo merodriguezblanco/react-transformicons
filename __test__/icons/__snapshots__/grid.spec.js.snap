@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridIcon when animation="collapse" renders a collapse grid 1`] = `
+<button
+  animation="collapse"
+  aria-label="toggle grid"
+  className="tcon tcon-grid tcon-grid--collapse "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-grid__item"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle grid
+  </span>
+</button>
+`;
+
+exports[`GridIcon when animation="rearrange" renders a rearrange grid 1`] = `
+<button
+  animation="rearrange"
+  aria-label="toggle grid"
+  className="tcon tcon-grid tcon-grid--rearrange "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-grid__item"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle grid
+  </span>
+</button>
+`;
+
+exports[`GridIcon when no animation renders a collapse grid 1`] = `
+<button
+  aria-label="toggle grid"
+  className="tcon tcon-grid tcon-grid--rearrange "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-grid__item"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle grid
+  </span>
+</button>
+`;

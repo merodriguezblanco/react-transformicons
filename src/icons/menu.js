@@ -19,19 +19,19 @@ class MenuIcon extends React.Component {
     this.handleClick = this.handleClick.bind(this);
 
     this.state = {
-      isActive: isActive
+      active: isActive
     };
   };
 
   handleClick(event) {
     this.setState((prevState) => ({
-      isActive: !prevState.isActive
+      active: !prevState.active
     }));
   };
 
   render() {
     const animation = menuAnimations[this.props.animation ? this.props.animation : defaultAnimation];
-    const transform = this.state.isActive ? 'tcon-transform' : '';
+    const transform = this.state.active ? 'tcon-transform' : '';
     const animationClass = animation.map(s => styles[`${s}`]).join(' ');
     const buttonClass = [styles.tcon, animationClass, styles[`${transform}`]].join(' ');
 

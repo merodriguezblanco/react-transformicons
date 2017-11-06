@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuIcon when animation="arrow-360-left" renders a arrow-360-left menu 1`] = `
+<button
+  animation="arrow-360-left"
+  aria-label="toggle menu"
+  className="tcon tcon-menu--arrow tcon-menu--arrow360left "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-menu__lines"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle menu
+  </span>
+</button>
+`;
+
+exports[`MenuIcon when animation="arrow-left" renders a arrow-left menu 1`] = `
+<button
+  animation="arrow-left"
+  aria-label="toggle menu"
+  className="tcon tcon-menu--arrow tcon-menu--arrowleft "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-menu__lines"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle menu
+  </span>
+</button>
+`;
+
+exports[`MenuIcon when animation="arrow-up" renders an arrow-up menu 1`] = `
+<button
+  animation="arrow-up"
+  aria-label="toggle menu"
+  className="tcon tcon-menu--arrow tcon-menu--arrowup "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-menu__lines"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle menu
+  </span>
+</button>
+`;
+
+exports[`MenuIcon when animation="minus" renders a minus menu 1`] = `
+<button
+  animation="minus"
+  aria-label="toggle menu"
+  className="tcon tcon-menu--minus "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-menu__lines"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle menu
+  </span>
+</button>
+`;
+
+exports[`MenuIcon when animation="x-cross" renders a x-cross menu 1`] = `
+<button
+  animation="x-cross"
+  aria-label="toggle menu"
+  className="tcon tcon-menu--xcross "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-menu__lines"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle menu
+  </span>
+</button>
+`;
+
+exports[`MenuIcon when no animation renders a butterfly menu 1`] = `
+<button
+  aria-label="toggle menu"
+  className="tcon tcon-menu--xbutterfly "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-menu__lines"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle menu
+  </span>
+</button>
+`;

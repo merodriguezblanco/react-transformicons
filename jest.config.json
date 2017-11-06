@@ -1,0 +1,11 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
+  "moduleDirectories": ["node_modules"],
+  "moduleNameMapper": {
+    "\\.(css|less|scss)$": "<rootDir>/__test__/__mocks__/styleMock.js"
+  },
+  "setupFiles": ["<rootDir>/__test__/jest_helper.js"]
+}

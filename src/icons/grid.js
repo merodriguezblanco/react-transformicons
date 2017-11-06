@@ -15,19 +15,19 @@ class GridIcon extends React.Component {
     this.handleClick = this.handleClick.bind(this);
 
     this.state = {
-      isActive: isActive
+      active: isActive
     };
   };
 
   handleClick(event) {
     this.setState((prevState) => ({
-      isActive: !prevState.isActive
+      active: !prevState.active
     }));
   };
 
   render() {
     const animation = gridAnimations[this.props.animation ? this.props.animation : defaultAnimation];
-    const transform = this.state.isActive ? 'tcon-transform' : '';
+    const transform = this.state.active ? 'tcon-transform' : '';
     const animationClass = animation.map(s => styles[`${s}`]).join(' ');
     const buttonClass = [styles.tcon, animationClass, styles[`${transform}`]].join(' ');
 
@@ -36,11 +36,11 @@ class GridIcon extends React.Component {
         aria-label="toggle grid"
         className={buttonClass}
         onClick={this.handleClick}
+        {...this.props}
       >
         <span
           aria-hidden="true"
           className={styles['tcon-grid__item']}
-          {...this.props}
         />
         <span className={styles['tcon-visuallyhidden']}>toggle grid</span>
       </button>
