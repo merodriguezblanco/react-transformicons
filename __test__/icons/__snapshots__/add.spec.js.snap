@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddIcon when animation="check" renders a check add 1`] = `
+<button
+  animation="check"
+  aria-label="add item"
+  className="tcon tcon-plus tcon-plus--check "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    add item
+  </span>
+</button>
+`;
+
+exports[`AddIcon when animation="minus" renders a minus add 1`] = `
+<button
+  animation="minus"
+  aria-label="add item"
+  className="tcon tcon-plus tcon-plus--minus "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    add item
+  </span>
+</button>
+`;
+
+exports[`AddIcon when no animation renders a minus add 1`] = `
+<button
+  aria-label="add item"
+  className="tcon tcon-plus tcon-plus--minus "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    add item
+  </span>
+</button>
+`;

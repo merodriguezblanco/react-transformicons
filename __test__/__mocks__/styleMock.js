@@ -16,5 +16,8 @@ module.exports = {
   'tcon-menu--arrow': 'tcon-menu--arrow',
   'tcon-menu--arrowleft': 'tcon-menu--arrowleft',
   'tcon-visuallyhidden': 'tcon-visuallyhidden',
-  'tcon-transform': 'tcon-transform'
+  'tcon-transform': 'tcon-transform',
+  'tcon-plus': 'tcon-plus',
+  'tcon-plus--minus': 'tcon-plus--minus',
+  'tcon-plus--check': 'tcon-plus--check'
 };
