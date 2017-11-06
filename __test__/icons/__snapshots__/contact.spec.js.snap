@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactIcon when animation="email" renders an email 1`] = `
+<button
+  animation="mail"
+  aria-label="open mailbox"
+  className="tcon tcon-mail--envelope "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-mail--envelope__flap"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    open mailbox
+  </span>
+</button>
+`;
+
+exports[`ContactIcon when no animation renders an email 1`] = `
+<button
+  aria-label="open mailbox"
+  className="tcon tcon-mail--envelope "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-mail--envelope__flap"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    open mailbox
+  </span>
+</button>
+`;

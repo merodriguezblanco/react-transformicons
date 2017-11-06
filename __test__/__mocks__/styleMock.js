@@ -25,5 +25,7 @@ module.exports = {
   'tcon-remove--chevron-left': 'tcon-remove--chevron-left',
   'tcon-remove--chevron-right': 'tcon-remove--chevron-right',
   'tcon-remove--chevron-down': 'tcon-remove--chevron-down',
-  'tcon-remove--chevron-up': 'tcon-remove--chevron-up'
+  'tcon-remove--chevron-up': 'tcon-remove--chevron-up',
+  'tcon-mail--envelope': 'tcon-mail--envelope',
+  'tcon-mail--envelope__flap': 'tcon-mail--envelope__flap'
 };

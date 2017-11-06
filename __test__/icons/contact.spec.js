@@ -1,31 +1,26 @@
-import React      from 'react';
-import AddIcon    from '../../src/icons/add';
-import renderer   from 'react-test-renderer';
+import React       from 'react';
+import ContactIcon from '../../src/icons/contact';
+import renderer    from 'react-test-renderer';
 
-describe('AddIcon', () => {
+describe('ContactIcon', () => {
 
-  it('when no animation renders a minus add', () => {
-    const iconButton = renderer.create(<AddIcon />);
+  it('when no animation renders an email', () => {
+    const iconButton = renderer.create(<ContactIcon />);
     expect(iconButton.toJSON()).toMatchSnapshot();
   });
 
-  it('when animation="minus" renders a minus add', () => {
-    const iconButton = renderer.create(<AddIcon animation="minus" />);
-    expect(iconButton.toJSON()).toMatchSnapshot();
-  });
-
-  it('when animation="check" renders a check add', () => {
-    const iconButton = renderer.create(<AddIcon animation="check" />);
+  it('when animation="email" renders an email', () => {
+    const iconButton = renderer.create(<ContactIcon animation="mail" />);
     expect(iconButton.toJSON()).toMatchSnapshot();
   });
 
   it('when clicking on transformicon changes icon', () => {
-    const iconButton = shallow(<AddIcon />);
+    const iconButton = shallow(<ContactIcon />);
 
     expect(iconButton.type()).toEqual('button')
-    expect(iconButton.hasClass('tcon tcon-plus')).toEqual(true);
+    expect(iconButton.hasClass('tcon tcon-mail--envelope')).toEqual(true);
     expect(iconButton.hasClass('tcon-transform')).toEqual(false);
-    expect(iconButton.find('span').length).toEqual(1);
+    expect(iconButton.find('span').length).toEqual(2);
 
     iconButton.simulate('click');
 
@@ -33,7 +28,7 @@ describe('AddIcon', () => {
   });
 
   it('when missing isActive prop inits inactive transformicon', () => {
-    const iconButton = shallow(<AddIcon />);
+    const iconButton = shallow(<ContactIcon />);
 
     expect(iconButton.state().active).toEqual(false)
     expect(iconButton.hasClass('tcon-transform')).toEqual(false);
@@ -45,7 +40,7 @@ describe('AddIcon', () => {
   });
 
   it('when isActive={true} renders an active transformicon', () => {
-    const iconButton = shallow(<AddIcon isActive={true} />);
+    const iconButton = shallow(<ContactIcon isActive={true} />);
 
     expect(iconButton.state().active).toEqual(true)
     expect(iconButton.hasClass('tcon-transform')).toEqual(true);
