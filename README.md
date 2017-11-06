@@ -1,5 +1,6 @@
 # react-transformicons
 
+[![npm](https://badge.fury.io/js/react-transformicons.svg)](https://www.npmjs.com/package/react-transformicons)
 [![Build Status](https://travis-ci.org/merodriguezblanco/react-transformicons.svg?branch=master)](https://travis-ci.org/merodriguezblanco/react-transformicons)
 
 **Plugin in development**
