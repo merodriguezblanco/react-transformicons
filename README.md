@@ -1,5 +1,7 @@
 # react-transformicons
 
+[![Build Status](https://travis-ci.org/merodriguezblanco/react-transformicons.svg?branch=master)](https://travis-ci.org/merodriguezblanco/react-transformicons)
+
 **Plugin in development**
 
 ## Introduction
