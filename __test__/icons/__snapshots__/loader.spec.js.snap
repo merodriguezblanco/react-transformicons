@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoaderIcon /> renders a loader icon 1`] = `
+<span
+  aria-label="loading"
+  className="tcon-loader--spinner360"
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    loading
+  </span>
+</span>
+`;

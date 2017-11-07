@@ -31,5 +31,6 @@ module.exports = {
   'tcon-search--xcross': 'tcon-search--xcross',
   'tcon-search__item': 'tcon-search__item',
   'tcon-vid--play': 'tcon-vid--play',
-  'tcon-svgchevron': 'tcon-svgchevron'
+  'tcon-svgchevron': 'tcon-svgchevron',
+  'tcon-loader--spinner360': 'tcon-loader--spinner360'
 };

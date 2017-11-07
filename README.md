@@ -40,6 +40,7 @@ ReactDOM.render(
 - [Form Icons](#form-icons)
 - [Video Icons](#video-icons)
 - [Scroll Icon](#scroll-icon)
+- [Loader Icon](#loader-icon)
 
 ### Menu Icons
 
@@ -209,6 +210,17 @@ Provides with a scroll icon.
 #### Examples
 ```handlebars
 <ScrollIcon />
+```
+
+### Loader Icon
+
+Provides with a Loader icon.
+
+![Loader Icon](/img/loader-icon.png)
+
+#### Examples
+```handlebars
+<LoaderIcon />
 ```
 
 # Contributions

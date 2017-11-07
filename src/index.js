@@ -6,6 +6,7 @@ import ContactIcon from './icons/contact';
 import FormIcon    from './icons/form';
 import VideoIcon   from './icons/video';
 import ScrollIcon  from './icons/scroll';
+import LoaderIcon  from './icons/loader';
 
 module.exports = {
   GridIcon,
@@ -15,5 +16,6 @@ module.exports = {
   ContactIcon,
   FormIcon,
   VideoIcon,
-  ScrollIcon
+  ScrollIcon,
+  LoaderIcon
 };
