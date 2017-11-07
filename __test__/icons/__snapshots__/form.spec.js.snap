@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormIcon /> when animation="search" renders a search 1`] = `
+<button
+  aria-label="toggle search"
+  className="tcon tcon-search--xcross "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-search__item"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle search
+  </span>
+</button>
+`;
+
+exports[`<FormIcon /> when no animation renders a search icon 1`] = `
+<button
+  aria-label="toggle search"
+  className="tcon tcon-search--xcross "
+  onClick={[Function]}
+>
+  <span
+    aria-hidden="true"
+    className="tcon-search__item"
+  />
+  <span
+    className="tcon-visuallyhidden"
+  >
+    toggle search
+  </span>
+</button>
+`;

@@ -33,6 +33,7 @@ ReactDOM.render(
 - [Add Icons](#add-icons)
 - [Remove Icons](#remove-icons)
 - [Contact Icons](#contact-icons)
+- [Form Icons](#form-icons)
 
 ### Menu Icons
 
@@ -153,6 +154,25 @@ Provides with Contact icons.
 <ContactIcon />
 <ContactIcon isActive={true}/>
 <ContactIcon animation="email" />
+```
+
+### Form Icons
+
+Provides with Form icons.
+
+![Form Icons](/img/form-icons.png)
+
+#### Parameters:
+- `animation` - string, optional - So far, the only available animation
+  is `search`.
+- `isActive` - boolean, optional - Sets initial state for the button. Defaults to
+  `false`.
+
+#### Examples
+```handlebars
+<FormIcon />
+<FormIcon isActive={true}/>
+<FormIcon animation="search" />
 ```
 
 # Contributions

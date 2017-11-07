@@ -27,5 +27,7 @@ module.exports = {
   'tcon-remove--chevron-down': 'tcon-remove--chevron-down',
   'tcon-remove--chevron-up': 'tcon-remove--chevron-up',
   'tcon-mail--envelope': 'tcon-mail--envelope',
-  'tcon-mail--envelope__flap': 'tcon-mail--envelope__flap'
+  'tcon-mail--envelope__flap': 'tcon-mail--envelope__flap',
+  'tcon-search--xcross': 'tcon-search--xcross',
+  'tcon-search__item': 'tcon-search__item'
 };

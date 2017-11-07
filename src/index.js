@@ -3,11 +3,13 @@ import MenuIcon    from './icons/menu';
 import AddIcon     from './icons/add';
 import RemoveIcon  from './icons/remove';
 import ContactIcon from './icons/contact';
+import FormIcon    from './icons/form';
 
 module.exports = {
   GridIcon,
   MenuIcon,
   AddIcon,
   RemoveIcon,
-  ContactIcon
+  ContactIcon,
+  FormIcon
 };
