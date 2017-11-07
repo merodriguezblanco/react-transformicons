@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="/img/transformicons.svg" alt="Transformicons" />
+</p>
+
 # react-transformicons
 
 [![npm](https://badge.fury.io/js/react-transformicons.svg)](https://www.npmjs.com/package/react-transformicons)
