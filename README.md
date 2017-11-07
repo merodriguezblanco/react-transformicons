@@ -32,6 +32,7 @@ ReactDOM.render(
 - [Grid Icons](#grid-icons)
 - [Add Icons](#add-icons)
 - [Remove Icons](#remove-icons)
+- [Contact Icons](#contact-icons)
 
 ### Menu Icons
 
@@ -103,7 +104,7 @@ Parameters:
 
 ### Remove Icons
 
-Provides with Add icons.
+Provides with Remove icons.
 
 Parameters:
 - `animation` - string, optional - Sets the menu animation type. In case this parameter is
@@ -125,6 +126,23 @@ Parameters:
 <RemoveIcon animation="chevron-down" />
 <RemoveIcon animation="chevron-up" />
 <RemoveIcon animation="check" isActive={true} />
+```
+
+### Contact Icons
+
+Provides with Contact icons.
+
+Parameters:
+- `animation` - string, optional - So far, the only available animation
+  is `email`.
+- `isActive` - boolean, optional - Sets initial state for the button. Defaults to
+  `false`.
+
+#### Examples
+```handlebars
+<ContactIcon />
+<ContactIcon isActive={true}/>
+<ContactIcon animation="email" />
 ```
 
 # Contributions
