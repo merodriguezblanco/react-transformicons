@@ -34,6 +34,7 @@ ReactDOM.render(
 - [Remove Icons](#remove-icons)
 - [Contact Icons](#contact-icons)
 - [Form Icons](#form-icons)
+- [Video Icons](#video-icons)
 
 ### Menu Icons
 
@@ -173,6 +174,25 @@ Provides with Form icons.
 <FormIcon />
 <FormIcon isActive={true}/>
 <FormIcon animation="search" />
+```
+
+### Video Icons
+
+Provides with Video icons.
+
+![Video Icons](/img/video-icons.png)
+
+#### Parameters:
+- `animation` - string, optional - So far, the only available animation
+  is `play`.
+- `isActive` - boolean, optional - Sets initial state for the button. Defaults to
+  `false`.
+
+#### Examples
+```handlebars
+<VideoIcon />
+<VideoIcon isActive={true}/>
+<VideoIcon animation="play" />
 ```
 
 # Contributions

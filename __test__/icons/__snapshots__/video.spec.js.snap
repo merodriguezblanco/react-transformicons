@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VideoIcon /> when animation="play" renders a play icon 1`] = `
+<button
+  aria-label="play video"
+  className="tcon tcon-vid--play "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    play video
+  </span>
+</button>
+`;
+
+exports[`<VideoIcon /> when no animation renders a play icon 1`] = `
+<button
+  aria-label="play video"
+  className="tcon tcon-vid--play "
+  onClick={[Function]}
+>
+  <span
+    className="tcon-visuallyhidden"
+  >
+    play video
+  </span>
+</button>
+`;
