@@ -2,7 +2,7 @@ import React    from 'react';
 import MenuIcon from '../../src/icons/menu';
 import renderer from 'react-test-renderer';
 
-describe('MenuIcon', () => {
+describe('<MenuIcon />', () => {
 
   it('when no animation renders a butterfly menu', () => {
     const iconButton = renderer.create(<MenuIcon />);
@@ -35,41 +35,17 @@ describe('MenuIcon', () => {
   });
 
   it('when clicking on transformicon changes icon', () => {
-    const iconButton = shallow(<MenuIcon />);
+    const iconButton = mount(<MenuIcon />);
+    const $button = iconButton.find('button');
 
-    expect(iconButton.type()).toEqual('button')
-    expect(iconButton.hasClass('tcon')).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect($button.hasClass('tcon')).toEqual(true);
+    expect($button.hasClass('tcon-transform')).toEqual(false);
 
-    expect(iconButton.find('span').length).toEqual(2);
-    expect(iconButton.find('span').first().hasClass('tcon-menu__lines')).toEqual(true);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when missing isActive prop inits inactive transformicon', () => {
-    const iconButton = shallow(<MenuIcon />);
-
-    expect(iconButton.state().active).toEqual(false)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect($button.find('span').length).toEqual(2);
+    expect($button.find('span').first().hasClass('tcon-menu__lines')).toEqual(true);
 
     iconButton.simulate('click');
 
-    expect(iconButton.state().active).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when isActive={true} renders an active transformicon', () => {
-    const iconButton = shallow(<MenuIcon isActive={true} />);
-
-    expect(iconButton.state().active).toEqual(true)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.state().active).toEqual(false);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect(iconButton.find('button').hasClass('tcon-transform')).toEqual(true);
   });
 });

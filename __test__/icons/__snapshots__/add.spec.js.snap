@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddIcon when animation="check" renders a check add 1`] = `
+exports[`<AddIcon /> when animation="check" renders a check add 1`] = `
 <button
-  animation="check"
   aria-label="add item"
   className="tcon tcon-plus tcon-plus--check "
   onClick={[Function]}
@@ -15,9 +14,8 @@ exports[`AddIcon when animation="check" renders a check add 1`] = `
 </button>
 `;
 
-exports[`AddIcon when animation="minus" renders a minus add 1`] = `
+exports[`<AddIcon /> when animation="minus" renders a minus add 1`] = `
 <button
-  animation="minus"
   aria-label="add item"
   className="tcon tcon-plus tcon-plus--minus "
   onClick={[Function]}
@@ -30,7 +28,7 @@ exports[`AddIcon when animation="minus" renders a minus add 1`] = `
 </button>
 `;
 
-exports[`AddIcon when no animation renders a minus add 1`] = `
+exports[`<AddIcon /> when no animation renders a minus add 1`] = `
 <button
   aria-label="add item"
   className="tcon tcon-plus tcon-plus--minus "

@@ -2,7 +2,7 @@ import React      from 'react';
 import RemoveIcon from '../../src/icons/remove';
 import renderer   from 'react-test-renderer';
 
-describe('RemoveIcon', () => {
+describe('<RemoveIcon />', () => {
 
   it('when no animation renders a check remove', () => {
     const iconButton = renderer.create(<RemoveIcon />);
@@ -35,39 +35,15 @@ describe('RemoveIcon', () => {
   });
 
   it('when clicking on transformicon changes icon', () => {
-    const iconButton = shallow(<RemoveIcon />);
+    const iconButton = mount(<RemoveIcon />);
+    const $button = iconButton.find('button');
 
-    expect(iconButton.type()).toEqual('button')
-    expect(iconButton.hasClass('tcon tcon-remove')).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
-    expect(iconButton.find('span').length).toEqual(1);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when missing isActive prop inits inactive transformicon', () => {
-    const iconButton = shallow(<RemoveIcon />);
-
-    expect(iconButton.state().active).toEqual(false)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect($button.hasClass('tcon tcon-remove')).toEqual(true);
+    expect($button.hasClass('tcon-transform')).toEqual(false);
+    expect($button.find('span').length).toEqual(1);
 
     iconButton.simulate('click');
 
-    expect(iconButton.state().active).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when isActive={true} renders an active transformicon', () => {
-    const iconButton = shallow(<RemoveIcon isActive={true} />);
-
-    expect(iconButton.state().active).toEqual(true)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.state().active).toEqual(false);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect(iconButton.find('button').hasClass('tcon-transform')).toEqual(true);
   });
 });

@@ -2,7 +2,7 @@ import React       from 'react';
 import GridIcon    from '../../src/icons/grid';
 import renderer    from 'react-test-renderer';
 
-describe('GridIcon', () => {
+describe('<GridIcon />', () => {
 
   it('when no animation renders a collapse grid', () => {
     const iconButton = renderer.create(<GridIcon />);
@@ -20,41 +20,17 @@ describe('GridIcon', () => {
   });
 
   it('when clicking on transformicon changes icon', () => {
-    const iconButton = shallow(<GridIcon />);
+    const iconButton = mount(<GridIcon />);
+    const $button = iconButton.find('button');
 
-    expect(iconButton.type()).toEqual('button')
-    expect(iconButton.hasClass('tcon tcon-grid')).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect($button.hasClass('tcon tcon-grid')).toEqual(true);
+    expect($button.hasClass('tcon-transform')).toEqual(false);
 
-    expect(iconButton.find('span').length).toEqual(2);
-    expect(iconButton.find('span').first().hasClass('tcon-grid__item')).toEqual(true);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when missing isActive prop inits inactive transformicon', () => {
-    const iconButton = shallow(<GridIcon />);
-
-    expect(iconButton.state().active).toEqual(false)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect($button.find('span').length).toEqual(2);
+    expect($button.find('span').first().hasClass('tcon-grid__item')).toEqual(true);
 
     iconButton.simulate('click');
 
-    expect(iconButton.state().active).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when isActive={true} renders an active transformicon', () => {
-    const iconButton = shallow(<GridIcon isActive={true} />);
-
-    expect(iconButton.state().active).toEqual(true)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.state().active).toEqual(false);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect(iconButton.find('button').hasClass('tcon-transform')).toEqual(true);
   });
 });

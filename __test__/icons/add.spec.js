@@ -2,7 +2,7 @@ import React      from 'react';
 import AddIcon    from '../../src/icons/add';
 import renderer   from 'react-test-renderer';
 
-describe('AddIcon', () => {
+describe('<AddIcon />', () => {
 
   it('when no animation renders a minus add', () => {
     const iconButton = renderer.create(<AddIcon />);
@@ -20,39 +20,15 @@ describe('AddIcon', () => {
   });
 
   it('when clicking on transformicon changes icon', () => {
-    const iconButton = shallow(<AddIcon />);
+    const iconButton = mount(<AddIcon />);
+    const $button = iconButton.find('button');
 
-    expect(iconButton.type()).toEqual('button')
-    expect(iconButton.hasClass('tcon tcon-plus')).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
-    expect(iconButton.find('span').length).toEqual(1);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when missing isActive prop inits inactive transformicon', () => {
-    const iconButton = shallow(<AddIcon />);
-
-    expect(iconButton.state().active).toEqual(false)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect($button.hasClass('tcon tcon-plus')).toEqual(true);
+    expect($button.hasClass('tcon-transform')).toEqual(false);
+    expect($button.find('span').length).toEqual(1);
 
     iconButton.simulate('click');
 
-    expect(iconButton.state().active).toEqual(true);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-  });
-
-  it('when isActive={true} renders an active transformicon', () => {
-    const iconButton = shallow(<AddIcon isActive={true} />);
-
-    expect(iconButton.state().active).toEqual(true)
-    expect(iconButton.hasClass('tcon-transform')).toEqual(true);
-
-    iconButton.simulate('click');
-
-    expect(iconButton.state().active).toEqual(false);
-    expect(iconButton.hasClass('tcon-transform')).toEqual(false);
+    expect(iconButton.find('button').hasClass('tcon-transform')).toEqual(true);
   });
 });
