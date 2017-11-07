@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Transformicons for React.
+[Transformicons](http://www.transformicons.com/) for React.
 
 ## Installation
 
@@ -38,7 +38,9 @@ ReactDOM.render(
 
 Provides with Menu icons.
 
-Parameters:
+![Menu Icons](/img/menu-icons.png)
+
+#### Parameters:
 - `animation` - string, optional - Sets the menu animation type. In case this parameter is
   not provided, it will default to `butterfly`. Values available:
   - `butterfly`
@@ -66,7 +68,9 @@ Parameters:
 
 Provides with Grid icons.
 
-Parameters:
+![Grid Icons](/img/grid-icons.png)
+
+#### Parameters:
 - `animation` - string, optional - Sets the menu animation type. In case this parameter is
   not provided, it will default to `rearrange`. Values available:
   - `rearrange`
@@ -86,7 +90,9 @@ Parameters:
 
 Provides with Add icons.
 
-Parameters:
+![Add Icons](/img/add-icons.png)
+
+#### Parameters:
 - `animation` - string, optional - Sets the menu animation type. In case this parameter is
   not provided, it will default to `minus`. Values available:
   - `minus`
@@ -106,7 +112,9 @@ Parameters:
 
 Provides with Remove icons.
 
-Parameters:
+![Remove Icons](/img/remove-icons.png)
+
+#### Parameters:
 - `animation` - string, optional - Sets the menu animation type. In case this parameter is
   not provided, it will default to `check`. Values available:
   - `check`
@@ -132,7 +140,9 @@ Parameters:
 
 Provides with Contact icons.
 
-Parameters:
+![Contact Icons](/img/contact-icons.png)
+
+#### Parameters:
 - `animation` - string, optional - So far, the only available animation
   is `email`.
 - `isActive` - boolean, optional - Sets initial state for the button. Defaults to
