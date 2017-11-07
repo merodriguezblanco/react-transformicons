@@ -30,5 +30,6 @@ module.exports = {
   'tcon-mail--envelope__flap': 'tcon-mail--envelope__flap',
   'tcon-search--xcross': 'tcon-search--xcross',
   'tcon-search__item': 'tcon-search__item',
-  'tcon-vid--play': 'tcon-vid--play'
+  'tcon-vid--play': 'tcon-vid--play',
+  'tcon-svgchevron': 'tcon-svgchevron'
 };

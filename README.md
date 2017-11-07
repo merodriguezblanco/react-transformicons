@@ -39,6 +39,7 @@ ReactDOM.render(
 - [Contact Icons](#contact-icons)
 - [Form Icons](#form-icons)
 - [Video Icons](#video-icons)
+- [Scroll Icon](#scroll-icon)
 
 ### Menu Icons
 
@@ -197,6 +198,17 @@ Provides with Video icons.
 <VideoIcon />
 <VideoIcon isActive={true}/>
 <VideoIcon animation="play" />
+```
+
+### Scroll Icon
+
+Provides with a scroll icon.
+
+![Scroll Icon](/img/scroll-icon.png)
+
+#### Examples
+```handlebars
+<ScrollIcon />
 ```
 
 # Contributions
