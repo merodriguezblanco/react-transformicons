@@ -1,6 +1,6 @@
 import React    from 'react';
 import BaseIcon from './base-button';
-import styles   from '../../vendor/transformicons.css';
+// import styles   from '../../vendor/transformicons.css';
 
 const defaultAnimation = 'mail';
 const contactAnimations = {
@@ -17,9 +17,9 @@ function ContactIcon(props) {
     >
       <span
         aria-hidden="true"
-        className={styles['tcon-mail--envelope__flap']}
+        className="tcon-mail--envelope__flap"
       />
-      <span className={styles['tcon-visuallyhidden']}>open mailbox</span>
+      <span className="tcon-visuallyhidden">open mailbox</span>
     </BaseIcon>
   );
 };

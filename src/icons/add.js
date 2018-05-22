@@ -1,6 +1,6 @@
 import React    from 'react';
 import BaseIcon from './base-button';
-import styles   from '../../vendor/transformicons.css';
+// import styles   from '../../vendor/transformicons.css';
 
 const defaultAnimation = 'minus';
 const addAnimations = {
@@ -16,7 +16,7 @@ function AddIcon(props) {
       defaultAnimation={defaultAnimation}
       {...props}
     >
-      <span className={styles['tcon-visuallyhidden']}>add item</span>
+      <span className='tcon-visuallyhidden'>add item</span>
     </BaseIcon>
   );
 };

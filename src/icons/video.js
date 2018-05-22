@@ -1,6 +1,6 @@
 import React    from 'react';
 import BaseIcon from './base-button';
-import styles   from '../../vendor/transformicons.css';
+// import styles   from '../../vendor/transformicons.css';
 
 const defaultAnimation = 'play';
 const videoAnimations = {
@@ -15,7 +15,7 @@ function VideoIcon(props) {
       defaultAnimation={defaultAnimation}
       {...props}
     >
-      <span className={styles['tcon-visuallyhidden']}>play video</span>
+      <span className='tcon-visuallyhidden'>play video</span>
     </BaseIcon>
   );
 };
