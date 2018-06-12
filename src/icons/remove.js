@@ -1,6 +1,5 @@
 import React  from 'react';
 import BaseIcon from './base-button';
-// import styles from '../../vendor/transformicons.css';
 
 const defaultAnimation = 'check';
 const removeAnimations = {
