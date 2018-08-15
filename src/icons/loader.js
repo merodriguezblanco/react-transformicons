@@ -5,9 +5,9 @@ function LoaderIcon(props) {
   return (
     <span
       aria-label="loading"
-      className={styles['tcon-loader--spinner360']}
+      className='tcon-loader--spinner360'
     >
-      <span className={styles['tcon-visuallyhidden']}>loading</span>
+      <span className='tcon-visuallyhidden'>loading</span>
     </span>
   );
 };

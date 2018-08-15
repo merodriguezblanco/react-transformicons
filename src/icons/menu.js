@@ -1,6 +1,5 @@
 import React    from 'react';
 import BaseIcon from './base-button';
-import styles   from '../../vendor/transformicons.css';
 
 const defaultAnimation = 'butterfly';
 const menuAnimations = {
@@ -22,9 +21,9 @@ function MenuIcon(props) {
     >
       <span
         aria-hidden="true"
-        className={styles['tcon-menu__lines']}
+        className='tcon-menu__lines'
       />
-      <span className={styles['tcon-visuallyhidden']}>toggle menu</span>
+      <span className='tcon-visuallyhidden'>toggle menu</span>
     </BaseIcon>
   );
 };

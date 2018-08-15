@@ -1,6 +1,5 @@
 import React    from 'react';
 import BaseIcon from './base-button';
-import styles   from '../../vendor/transformicons.css';
 
 const defaultAnimation = 'rearrange';
 const gridAnimations = {
@@ -18,9 +17,9 @@ function GridIcon(props) {
     >
       <span
         aria-hidden="true"
-        className={styles['tcon-grid__item']}
+        className='tcon-grid__item'
       />
-      <span className={styles['tcon-visuallyhidden']}>toggle grid</span>
+      <span className='tcon-visuallyhidden'>toggle grid</span>
     </BaseIcon>
   );
 };

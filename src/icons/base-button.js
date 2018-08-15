@@ -22,8 +22,8 @@ class BaseIconButton extends React.Component {
   render() {
     const animation = this.props.animations[this.props.animation ? this.props.animation : this.props.defaultAnimation];
     const transform = this.state.active ? 'tcon-transform' : '';
-    const animationClass = animation.map(s => styles[`${s}`]).join(' ');
-    const buttonClass = [styles.tcon, animationClass, styles[`${transform}`]].join(' ');
+    const animationClass = animation.map(s => `${s}`).join(' ');
+    const buttonClass = ['tcon', animationClass, `${transform}`].join(' ');
 
     return (
       <button
