@@ -1,7 +1,7 @@
 import React  from 'react';
 import styles from '../../vendor/transformicons.css';
 
-class BaseIconButton extends React.Component {
+class BaseIcon extends React.Component {
   constructor(props) {
     super(props);
 
@@ -37,4 +37,4 @@ class BaseIconButton extends React.Component {
   };
 };
 
-export default BaseIconButton;
+export default BaseIcon;
