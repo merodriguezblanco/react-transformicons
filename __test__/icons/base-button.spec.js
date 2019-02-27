@@ -1,8 +1,8 @@
-import React          from 'react';
-import BaseIconButton from '../../src/icons/base-button';
-import renderer       from 'react-test-renderer';
+import React    from 'react';
+import BaseIcon from '../../src/icons/base-button';
+import renderer from 'react-test-renderer';
 
-describe('<BaseIconButton />', () => {
+describe('<BaseIcon />', () => {
 
   const defaultAnimation = 'fake';
   const animations = {
@@ -11,7 +11,7 @@ describe('<BaseIconButton />', () => {
 
   it('when missing prop "isActive" inits inactive transformicon', () => {
     const iconButton = shallow(
-      <BaseIconButton
+      <BaseIcon
         animations={animations}
         defaultAnimation={defaultAnimation}
       />
@@ -28,7 +28,7 @@ describe('<BaseIconButton />', () => {
 
   it('when isActive={true} renders an active transformicon', () => {
     const iconButton = shallow(
-      <BaseIconButton
+      <BaseIcon
         animations={animations}
         defaultAnimation={defaultAnimation}
         isActive={true}
