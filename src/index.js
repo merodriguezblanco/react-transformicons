@@ -8,7 +8,7 @@ import VideoIcon   from './icons/video';
 import ScrollIcon  from './icons/scroll';
 import LoaderIcon  from './icons/loader';
 
-module.exports = {
+export {
   GridIcon,
   MenuIcon,
   AddIcon,
